@@ -1,0 +1,67 @@
+/* 品牌故事 */
+
+.header {
+  color: var(--neutral-0);
+
+  .bg {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .title-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 151px 0;
+  }
+}
+
+.section-highlight {
+  text-align: center;
+
+  .bg {
+    background-color: var(--primary-100);
+  }
+}
+
+.section-img {
+  .img-extend {
+    max-width: none;
+    width: calc(100% + 220px);
+    margin-left: -110px;
+  }
+}
+
+.section-milestone {
+  .decoration::before {
+    content: '·';
+  }
+  .decoration::after {
+    content: '｜';
+  }
+}
+
+.section-values {
+  li::before {
+    content: '';
+    width: 3px;
+    height: 24px;
+    background-color: var(--neutral-300);
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: bottom;
+  }
+}
+
+.section-story {
+  li {
+    padding: 8px 0;
+  }
+  .text-underline {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #57a203;
+  }
+}
