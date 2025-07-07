@@ -31,6 +31,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -58,6 +59,11 @@ h6 {
 p {
   line-height: 1.5;
 }
+
+.bi {
+  line-height: 1;
+}
+
 .fw-medium {
   font-weight: 500;
 }
@@ -84,19 +90,26 @@ p {
 .me-2 {
   margin-right: 8px;
 }
-
+.my-9 {
+  margin: 64px 0;
+}
 .p-6 {
   padding: 32px;
+}
+.py-6 {
+  padding: 32px 0;
 }
 .py-9 {
   padding: 64px 0;
 }
-.my-9 {
-  padding: 64px 0;
+.pt-6 {
+  padding-top: 32px;
 }
 
 :root {
   --primary-100: #f5fee7;
+  --primary-200: #e8fec5;
+  --primary-300: #c0fa73;
   --primary-400: #57a203;
   --neutral-0: #ffffff;
   --neutral-100: #f8f9fa;
@@ -108,22 +121,23 @@ p {
   color: var(--primary-400);
 }
 
-.container {
-  max-width: 856px;
-  margin: 0 auto;
+.border-underline-24 {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dee2e6;
 }
 
-.border-underline {
+.border-underline-48 {
   padding-bottom: 48px;
   border-bottom: 1px solid #dee2e6;
 }
 
-/* footer區塊 */
-.footer {
-  text-align: center;
-  color: var(--neutral-600);
-
-  .bg {
-    background-color: var(--neutral-100);
-  }
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+.btn-black {
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
 }

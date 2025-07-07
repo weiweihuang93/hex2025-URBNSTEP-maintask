@@ -1,0 +1,90 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* header-nav區塊 */
+.header-nav {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      gap: 16px;
+    }
+    li {
+      padding: 12px;
+      font-weight: 500;
+    }
+    .d-flex {
+      padding: 16px 0;
+    }
+    .logo {
+      margin-right: 36px;
+    }
+    .login {
+      padding: 12px;
+    }
+  }
+}
+
+/* footer區塊 */
+.footer {
+  text-align: center;
+  color: var(--neutral-600);
+
+  .bg {
+    background-color: var(--neutral-100);
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.5;
+    gap: 16px;
+    color: var(--neutral-900);
+
+    li {
+      padding: 12px;
+    }
+  }
+}
