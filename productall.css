@@ -1,0 +1,97 @@
+.breadcrumb {
+  ol {
+    display: flex;
+  }
+
+  /* 所有連結預設為 neutral-600 */
+  .breadcrumb-item a {
+    font-weight: 500;
+    color: var(--neutral-600);
+    text-decoration: none;
+  }
+
+  /* 當前頁（active）*/
+  .breadcrumb-item.active {
+    color: var(--neutral-900);
+  }
+
+  /* 分隔符號 / 樣式 */
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '/';
+    margin: 0 12px;
+    color: var(--neutral-600);
+  }
+}
+
+.all-product {
+  font-weight: 500;
+
+  .product-menu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    li:hover {
+      color: var(--primary-400);
+    }
+
+    li a {
+      width: 100%;
+      padding: 12px 0;
+    }
+    li.active {
+      color: var(--primary-400);
+    }
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  .product-card {
+    flex: 1 1 calc((100% / 3) - 24px);
+  }
+  .product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      gap: 8px;
+    }
+    .arrow a {
+      padding: 10px;
+      line-height: 1;
+    }
+    .page-item a {
+      padding: 8px 15px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .page-item-s a {
+      padding: 8px 10.5px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .page-item a:hover,
+    .page-item-s a:hover {
+      background-color: var(--primary-300);
+    }
+  }
+}
+
+.section-promotion {
+  .bg {
+    background-color: var(--primary-200);
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+  }
+}
