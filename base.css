@@ -64,6 +64,13 @@ p {
   line-height: 1;
 }
 
+.lh-base {
+  line-height: 1.5;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
 .fw-medium {
   font-weight: 500;
 }
@@ -75,6 +82,9 @@ p {
 .mb-1 {
   margin-bottom: 4px;
 }
+.mb-2 {
+  margin-bottom: 8px;
+}
 .mb-3 {
   margin-bottom: 12px;
 }
@@ -83,6 +93,9 @@ p {
 }
 .mb-5 {
   margin-bottom: 24px;
+}
+.mb-6 {
+  margin-bottom: 32px;
 }
 .mb-8 {
   margin-bottom: 48px;
@@ -93,14 +106,23 @@ p {
 .p-6 {
   padding: 32px;
 }
+.py-3 {
+  padding: 12px 0;
+}
 .py-6 {
   padding: 32px 0;
+}
+.py-8 {
+  padding: 48px 0;
 }
 .py-9 {
   padding: 64px 0;
 }
 .pt-6 {
   padding-top: 32px;
+}
+.pt-7 {
+  padding-top: 40px;
 }
 .pt-8 {
   padding-top: 48px;
@@ -117,34 +139,70 @@ p {
   --neutral-0: #ffffff;
   --neutral-100: #f8f9fa;
   --neutral-300: #dee2e6;
+  --neutral-500: #adb5bd;
   --neutral-600: #6c757d;
   --neutral-900: #212529;
+  --danger-300: #d74f4f;
 }
 .text-primary-400 {
   color: var(--primary-400);
 }
-
-.border-underline-24 {
-  padding-bottom: 24px;
-  border-bottom: 1px solid #dee2e6;
+.text-neutral-500 {
+  color: var(--neutral-500);
+}
+.text-danger-300 {
+  color: var(--danger-300);
 }
 
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.border-underline {
+  border-bottom: 1px solid var(--neutral-300);
+}
+.border-underline-24 {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--neutral-300);
+}
 .border-underline-48 {
   padding-bottom: 48px;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--neutral-300);
 }
 
 .btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
   padding: 12px 24px;
   border-radius: 4px;
 }
 .btn-black {
-  font-weight: 500;
-  line-height: 1.5;
   background-color: var(--neutral-900);
   color: var(--neutral-0);
 }
-
-* {
-  outline: 1px dotted red;
+.btn-outline-black {
+  background-color: #fff;
+  color: var(--neutral-900);
+  border: 1px solid var(--neutral-900);
+}
+.btn-outline-black:hover {
+  background-color: var(--neutral-900);
+  color: #fff;
+}
+.btn-outline-gray {
+  background-color: #fff;
+  color: var(--neutral-900);
+  border: 1px solid var(--neutral-300);
+}
+.btn-outline-gray:hover {
+  background-color: #fff;
+  color: var(--neutral-900);
+  border: 1px solid var(--neutral-900);
+}
+.btn-outline-gray.disabled {
+  background-color: #fff;
+  color: var(--neutral-300);
+  border: 1px solid var(--neutral-300);
 }

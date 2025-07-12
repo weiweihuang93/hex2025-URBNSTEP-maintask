@@ -18,20 +18,32 @@
   margin-right: -12px;
 }
 .col-2 {
-  flex: 0 0 16.666667%;
-  max-width: 16.666667%;
+  width: calc(100% / 12 * 2);
   padding-left: 12px;
   padding-right: 12px;
 }
-.col-10 {
-  flex: 0 0 83.333333%;
-  max-width: 83.333333%;
+.col-3 {
+  width: calc(100% / 12 * 3);
   padding-left: 12px;
   padding-right: 12px;
 }
 .col-4 {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  width: calc(100% / 12 * 4);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-5 {
+  width: calc(100% / 12 * 5);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-7 {
+  width: calc(100% / 12 * 7);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-10 {
+  width: calc(100% / 12 * 10);
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -86,5 +98,42 @@
     li {
       padding: 12px;
     }
+  }
+}
+
+.breadcrumb {
+  ol {
+    display: flex;
+  }
+
+  /* 所有連結預設為 neutral-600 */
+  .breadcrumb-item a {
+    font-weight: 500;
+    color: var(--neutral-600);
+    text-decoration: none;
+  }
+
+  /* 當前頁（active）*/
+  .breadcrumb-item.active {
+    color: var(--neutral-900);
+  }
+
+  /* 分隔符號 / 樣式 */
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '/';
+    margin: 0 12px;
+    color: var(--neutral-600);
+  }
+}
+
+.section-promotion {
+  .bg {
+    background-color: var(--primary-200);
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
   }
 }
